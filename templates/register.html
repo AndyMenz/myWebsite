@@ -1,0 +1,30 @@
+{% extends 'layout.html '%}
+
+{% block title %} Register {% endblock %}
+
+{% block body %}
+<p>
+    <h1>Signup</h1>
+</p>
+<p>
+    <form method="POST" novalidate>
+        <p>
+            <input type="text" placeholder='Last Name'>
+        </p>
+        <p>
+            <input type="text" placeholder='Other names'>
+        </p>
+        <p>
+            <input type="text"placeholder="Email">
+        </p>
+        <p>
+            <input type="text" placeholder='Password'>
+        </p>
+        <p>
+            <input  class="btn btn-lg btn-primary" type="submit" value="Signup" />
+            
+        </p>
+
+    </form>
+</p>
+{%endblock%}

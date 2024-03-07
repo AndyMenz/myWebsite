@@ -1,0 +1,11 @@
+html {
+  padding: 10%;
+  margin: 2%;
+  background-color: blue;
+  background-image: url("banner.png");
+}
+
+body {
+  padding: 8px;
+  color: white;
+}

@@ -1,0 +1,38 @@
+{% extends 'layout.html' %} 
+
+{% block title %}Home{% endblock %} 
+
+{% block body %}
+<body style="background-image: url('banner.png');">
+  
+<br />
+<div style="font-size: 300%">
+  <strong>Welcome To My Closset</strong>
+</div>
+
+<form method="post">
+<p>
+  <h3>
+    {{form.item.label}} 
+  </h3>
+    {{form.item (class="form-control")}}
+</p>
+<p>
+  <h4>
+    {{form.brand.label}} 
+  </h4>
+    {{form.brand (class="form-control")}}
+</p>
+<p>
+  <h5>
+    {{form.size(placeholder='Size',class="form-control")}}
+  </h5>
+</p>
+<div>
+  <input class="btn btn-lg btn-primary" type="submit" value="Submit" />
+</div>
+
+</form>
+</body>
+
+{% endblock %} 
